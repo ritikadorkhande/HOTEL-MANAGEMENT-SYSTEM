@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('HOTEL2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+    
+    .login-form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+    
+    .login-form table {
+      width: 90%;
+    }
+    
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+    
+    h1 {
+      font-family: Algerian;
+      font-size: 90px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hotel Management System</h1>
+  <div class="container">
+    <div class="login-form">
+     
+      <form action="2ndpagetry.html">
+        <center>
+        <p> LOGIN FORM </p></center>
+        <table>
+          <tr>
+            <td><label for="username">Username:</label></td>
+            <td><input type="text" id="username" required></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" required></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button type="submit">Login</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

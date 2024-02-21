@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EMPLOYEE DETAILS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 5px;
+      background: url('lobbychair.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: Algerian;
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>EMPLOYEE DETAILS</h2>
+    <form>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee Name: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Email Address: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Gender: <input type="radio" name="gender" value="male">Male 
+              <input type="radio" name="gender" value="female">Female</th>
+          </tr>
+
+          <tr>
+            <th>Date of Birth: <input type="Date" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Contact Number: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Address: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Position: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Department: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Salary: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Shift Timing: <input type="text" size="70"></th>
+          </tr>
+
+          <tr>
+            <th>Active Status: <input type="radio" name="Active Status" value="Present">Present 
+              <input type="radio" name="gender" value="Absent">Absent</th>
+          </tr>
+        </thead>
+      </table>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-image: url('lobbychair.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 36px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .btn-group {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .btn-group button:last-child {
+    margin-right: 0;
+  }
+</style>
+<script>
+  function resetForm() {
+    document.getElementById("booking-form").reset();
+  }
+
+  function deleteForm() {
+    // Add your delete functionality here
+    alert("Form deleted");
+  }
+
+  function updateForm() {
+    // Add your update functionality here
+    alert("Form updated");
+  }
+</script>
+</head>
+<body>
+  <font face="ALGERIAN" size="24">
+    <h1>Room Booking Details</h1>
+  </font>
+  <div class="container">
+    <form id="booking-form">
+      <table>
+        <tr>
+          <th>Customer ID:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>Customer Contact:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>Check-in Date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" size="20"></th>
+        </tr>
+        <tr>
+          <th>Check-out Date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" size="20"></th>
+        </tr>
+        <tr>
+          <th>Check-in Time:&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" size="20"></th>
+        </tr>
+        <tr>
+          <th>Check-out Time:&nbsp;&nbsp;&nbsp;&nbsp;<input type="time" size="20"></th>
+        </tr>
+        <tr>
+          <th>Room Type:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>Available Room:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>No. of Days:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>Paid Tax:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+        <tr>
+          <th>Sub Total:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="20"></th>
+        </tr>
+      </table>
+    </form>
+    <div class="btn-group">
+
+      <button onclick="submitForm()">SUBMIT</button>
+      <button onclick="location.href='receipt1.html'">Generate Bill</button>
+      <button onclick="resetForm()">Reset</button>
+      <button onclick="deleteForm()">Delete</button>
+      <button onclick="updateForm()">Update</button>
+    </div>
+  </div>
+</body>
+</html>
